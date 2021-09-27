@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list_view_articulos">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:background="#C9B5EC"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LISTADO DE ARTICULOS REGISTRADOS"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+        <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:queryHint="Search"
+                android:iconifiedByDefault="false"
+
+        />
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listViewPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="#D2BFF4"
+            android:layout_marginBottom="35dp" />
+
+
+
+</RelativeLayout>
